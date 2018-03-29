@@ -1,5 +1,5 @@
-#### Clean working environment set with following packages:
-
+### Clean working environment:
+##### Source Code Checking Tools
 - pylint
 - autopep8
 - pyflakes
@@ -9,7 +9,4 @@
 
 
 for each commit in the .git/hooks/pre-commit the following commands are executed:
-
-#!/bin/sh
-grep -L "test" *.py | xargs pylint
-flake8 .
+#!/bin/sh grep -L "test" *.py | xargs pylint flake8 .
